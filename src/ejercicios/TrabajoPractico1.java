@@ -60,7 +60,10 @@ public class TrabajoPractico1 {
      * Crear un arreglo de numeros enteros del 1 al 5, recorrerlos y mostralos de las 2 formas
      */
     public void ejercicio3() {
+        // aca hicimos un cambio
         
+        
+        // mas cambios
     }
     
     /**
