@@ -42,7 +42,7 @@ public class TrabajoPractico3 {
         
         Mercaderia mercaderia1 = new Mercaderia();
         mercaderia1.setCodigo("COD001");
-        mercaderia1.setNombre("Yerba");
+        mercaderia1.setNombre("Yerba Mate");
         mercaderia1.setValor(30);
         mercaderia1.setPeso(0.5f);
         
