@@ -70,20 +70,23 @@ public class TrabajoPractico1 {
         arrayNumeros[2] = 3;
         arrayNumeros[3] = 4;
         arrayNumeros[4] = 5;
-
-        for (int i = 0; i <= 4; i++) {
-
-            System.out.println(arrayNumeros[i]);
+            System.out.println("Iterando Arreglos forma 1");
             
+        for (int i = 0; i <= 4; i++) {
+            
+            System.out.println(arrayNumeros[i]);
         }
-
+       
+        System.out.println("Iterando Arreglos forma 2");
+        for (int arrayNum : arrayNumeros) {
+            System.out.println(arrayNum);
     }
 
     /**
      * Crear una lista de numeros enteros del 1 al 5, recorrerlos y mostarlos de
      * las 3 formas
      */
-    public void ejercicio4() {
+//    public void ejercicio4() {
 
     }
 
