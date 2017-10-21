@@ -80,6 +80,7 @@ public class TrabajoPractico1 {
         System.out.println("Iterando Arreglos forma 2");
         for (int arrayNum : arrayNumeros) {
             System.out.println(arrayNum);
+            
     }
 
     /**
