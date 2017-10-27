@@ -1,6 +1,7 @@
 package ejercicios;
 
 import excepciones.ExcepcionSimpatica;
+import excepciones.MiExcepcion;
 
 /**
  * Excepciones
@@ -69,6 +70,12 @@ public class TrabajoPractico2 {
      * Crear una excepcion propia y capturarla y mostrar su contenido.
      */
     public void ejercicio6() {
-        
+         try {
+            System.out.println("Saldra impreso primero");
+            throw new MiExcepcion("Soy la excepcion creada por Sonia");
+        }catch(MiExcepcion e) {
+            System.out.println("excepcion" +  e);
+        }
     }
 }
+
