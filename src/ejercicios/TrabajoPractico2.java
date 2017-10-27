@@ -11,12 +11,15 @@ public class TrabajoPractico2 {
     public void ejercicio1() {
         int[] array = new int[20];
         array[-7] = 24;
+        System.out.println("No tengo que llegar hasta aca");
     }
 
     public void ejercicio2() {
         try {
             int[] array = new int[20];
             array[50] = 24;
+            System.out.println("no debo llegar aca");
+            
             // Instrucciones cuando no hay una excepción
         } catch (ArrayIndexOutOfBoundsException ex) {
             // Instrucciones cuando se produce una excepcion

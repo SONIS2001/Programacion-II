@@ -57,6 +57,7 @@ public class TrabajoPractico1 {
         while (iterador.hasNext()) {
             System.out.println(iterador.next());
         }
+        
     }
 
     /**
