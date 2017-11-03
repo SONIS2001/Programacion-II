@@ -93,6 +93,7 @@ public class TrabajoPractico4 {
 
             listaClientes.add(cliente);
         }
+          
         for(int i=0;i<listaClientes.size();i+=2) {
             
             System.out.println("Cliente: " + listaClientes.get(i).getId());

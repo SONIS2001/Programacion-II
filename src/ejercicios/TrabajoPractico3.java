@@ -98,9 +98,10 @@ public class TrabajoPractico3 {
         pedido3.setCantidad(5);
         
         List<DetallePedido>listado=new ArrayList();
-                
+        
         Pedido pedido=ejercicio2();
         pedido.getDetalles().add(pedido3);
+        
                 
          for(int i=0;i<3;i++) {
             
