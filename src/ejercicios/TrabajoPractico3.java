@@ -81,4 +81,36 @@ public class TrabajoPractico3 {
         return pedido1;
         
     }
+
+/**
+     * LLamar al metodo del ejercicio 2 para crear un pedido completo
+     * y agregar un nuevo detalle que incluya una mercaderia nueva
+     */
+    public Pedido ejercicio3() {
+        Mercaderia mercaderia3=new Mercaderia();
+        mercaderia3.setCodigo("COD003");
+        mercaderia3.setNombre("Leche en Polvo");
+        mercaderia3.setPeso(1);
+        
+        
+        DetallePedido pedido3=new DetallePedido();
+        pedido3.setMercaderia(mercaderia3);
+        pedido3.setCantidad(5);
+        
+        List<DetallePedido>listado=new ArrayList();
+                
+        Pedido pedido=ejercicio2();
+        pedido.getDetalles().add(pedido3);
+                
+         for(int i=0;i<3;i++) {
+            
+            System.out.println("Nombre Producto: " + pedido.getDetalles().get(i).getMercaderia().getNombre());
+            System.out.println("Cantidad: " + pedido.getDetalles().get(i).getCantidad());
+        
+         
+            System.out.println(" ");
+        }
+        
+        return pedido;
+    }
 }
