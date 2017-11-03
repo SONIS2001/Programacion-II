@@ -100,6 +100,7 @@ public class TrabajoPractico4 {
             System.out.println("Nombre: " + listaClientes.get(i).getNombre());
             System.out.println("Email: " + listaClientes.get(i).getEmail());
             System.out.println("");
+            
         }
          return listaClientes;
     }
