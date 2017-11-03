@@ -106,8 +106,6 @@ public class TrabajoPractico3 {
             
             System.out.println("Nombre Producto: " + pedido.getDetalles().get(i).getMercaderia().getNombre());
             System.out.println("Cantidad: " + pedido.getDetalles().get(i).getCantidad());
-        
-         
             System.out.println(" ");
         }
         
