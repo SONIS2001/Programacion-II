@@ -104,10 +104,21 @@ public class TrabajoPractico1 {
               
              String numero =numeros.get(i);
               System.out.println(numero);
-              
-              
+                          
               
           }
+          System.out.println("\n");
+
+        System.out.println("Iterando Listas forma 2");
+        for (String numero : numeros) {
+            System.out.println(numero);
+        }
+
+        System.out.println("Iterando Listas forma 3 (Iterador)");
+        Iterator<String> iterador = numeros.iterator();
+        while (iterador.hasNext()) {
+            System.out.println(iterador.next());
+        }
           
               
           }
