@@ -88,9 +88,32 @@ public class TrabajoPractico1 {
      * Crear una lista de numeros enteros del 1 al 5, recorrerlos y mostarlos de
      * las 3 formas
      */
-//    public void ejercicio4() {
-
     }
+         public void ejercicio4() {
+          
+          List<String> numeros =new ArrayList();
+          
+          numeros.add("1");
+          numeros.add("2");
+          numeros.add("3");
+          numeros.add("4");
+          numeros.add("5");
+          
+          System.out.println("primera forma de iteración");
+          for (int i=0; i< numeros.size();i++){
+              
+             String numero =numeros.get(i);
+              System.out.println(numero);
+              
+              
+              
+          }
+          
+              
+          }
+      
+
+    
 
     /*
 

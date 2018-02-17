@@ -12,10 +12,11 @@ import modelos.Pedido;
 public class Programacion2 {
 
     public static void main(String[] args) throws Exception {
-        TrabajoPractico3 practico = new TrabajoPractico3();
+        TrabajoPractico1 practico = new TrabajoPractico1();
         
       
-      practico.ejercicio3();
+      practico.ejercicio4();
+      
         
     }
 
