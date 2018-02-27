@@ -34,7 +34,7 @@ public class TrabajoPractico2 {
     public void ejercicio3() {
         int[] array = new int[20];
         try {
-            int b = 0;
+            int b = 0 ;
             int a = 23 / b;
             array[-10] = 24;            
 
@@ -70,11 +70,19 @@ public class TrabajoPractico2 {
      * Crear una excepcion propia y capturarla y mostrar su contenido.
      */
     public void ejercicio6() {
+        
          try {
-            System.out.println("Saldra impreso primero");
-            throw new MiExcepcion("Soy la excepcion creada por Sonia");
-        }catch(MiExcepcion e) {
-            System.out.println("excepcion" +  e);
+            int[] numerito = new int[12];
+            numerito[-40] = 24;
+            System.out.println("no debo llegar aca");
+        }
+         
+         catch (ArrayIndexOutOfBoundsException ex) {
+          
+            System.out.println("Excepcion: " + ex);     
+        } finally {
+            System.out.println("Final del Ejercicio 2");
+            // Instruciones que se ejecutan, tanto si hay como sino hay excepciones
         }
     }
 }

@@ -108,11 +108,13 @@ public class TrabajoPractico1 {
               
           }
           System.out.println("\n");
+          
 
         System.out.println("Iterando Listas forma 2");
         for (String numero : numeros) {
             System.out.println(numero);
         }
+        
 
         System.out.println("Iterando Listas forma 3 (Iterador)");
         Iterator<String> iterador = numeros.iterator();
@@ -123,12 +125,8 @@ public class TrabajoPractico1 {
               
           }
       
-
-    
-
     /*
-
-    
+   
     /**
      * @return the arrayNumeros
      */

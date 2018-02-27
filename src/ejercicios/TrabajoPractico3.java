@@ -74,7 +74,8 @@ public class TrabajoPractico3 {
         pedido1.setCliente(cliente);
         pedido1.setFecha(new Date());
         pedido1.setDetalles(listaDetalles);
-
+        
+        
         return pedido1;
 
     }
@@ -97,8 +98,10 @@ public class TrabajoPractico3 {
 
        pedido2.getDetalles().add(pedido3);
        
+       
         System.out.println("Nombre Producto: " + pedido2.getDetalles().get(2).getMercaderia().getNombre() );
         System.out.println("Cantidad: " + pedido2.getDetalles().get(1).getCantidad());
+        System.out.println("Peso: " + pedido2.getDetalles().get(2).getMercaderia().getPeso());
         System.out.println(" ");
         
 
