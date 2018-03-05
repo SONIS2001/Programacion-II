@@ -2,6 +2,7 @@ package ejercicios;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 import modelos.DetallePedido;
 import modelos.Cliente;
 
@@ -83,26 +84,30 @@ public class TrabajoPractico4 {
      * @param clientes
      */
     
-    public List<Cliente> ejercicio3(int clientes) {
-         List<Cliente>listaClientes=new ArrayList();
-          for (int i = 1; i <= clientes; i++) {
+    public void ejercicio3() {
+        List<Cliente> clientes = new ArrayList();
+        int cantidadClientes = 20;
+        for (int i = 1; i <= cantidadClientes; i++) {
             Cliente cliente = new Cliente();
             cliente.setId(i);
             cliente.setNombre("nombre_" + i);
-            cliente.setEmail("email_" + i + "gmail.com");
+            cliente.setEmail("email_" + i + "@email.com");
 
-            listaClientes.add(cliente);
+            clientes.add(cliente);
+           
         }
-          
-        for(int i=0;i<listaClientes.size();i+=2) {
-            
-            System.out.println("Cliente: " + listaClientes.get(i).getId());
-            System.out.println("Nombre: " + listaClientes.get(i).getNombre());
-            System.out.println("Email: " + listaClientes.get(i).getEmail());
-            System.out.println("");
-            
+
+        for (int i = 0; i < clientes.size(); i++) {
+
+            Cliente c = clientes.get(i);
+            if (c.getId() % 2 != 0) {
+                System.out.println(c.getId());
+                System.out.println(c.getNombre());
+                System.out.println(c.getEmail());
+            }
         }
-         return listaClientes;
     }
+
+   
 }
 

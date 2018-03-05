@@ -12,7 +12,7 @@ import modelos.Pedido;
 public class Programacion2 {
 
     public static void main(String[] args) throws Exception {
-        TrabajoPractico3 practico = new TrabajoPractico3();
+        TrabajoPractico4 practico = new TrabajoPractico4();
         
     
       practico.ejercicio3();
