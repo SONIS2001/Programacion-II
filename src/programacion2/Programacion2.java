@@ -13,12 +13,11 @@ public class Programacion2 {
 
     public static void main(String[] args) throws Exception {
         TrabajoPractico4 practico = new TrabajoPractico4();
+
+        practico.ejercicio1();
+
         
-    
-      practico.ejercicio3();
-      
-      
-        
+
     }
 
 }

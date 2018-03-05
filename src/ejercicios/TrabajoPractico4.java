@@ -1,4 +1,5 @@
 package ejercicios;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,10 +8,9 @@ import modelos.DetallePedido;
 import modelos.Cliente;
 
 /**
- * Listas con Entidades
- * Haciendo un cambio pequeño
- * 
- * Este es un cambio
+ * Listas con Entidades Haciendo un cambio pequeño
+ *
+ *
  */
 public class TrabajoPractico4 {
 
@@ -35,27 +35,27 @@ public class TrabajoPractico4 {
             System.out.println(detalle.getCantidad());
         }
 
-        for(DetallePedido detalle : detalles) {
+        for (DetallePedido detalle : detalles) {
             System.out.println(detalle.getCantidad());
         }
 
         Iterator<DetallePedido> iterator = detalles.listIterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             DetallePedido detalle = iterator.next();
             System.out.println(detalle.getCantidad());
+
         }
+        /**
+         * 1. Crear n clientes y agregarlos a una lista. 2. Recorrer la lista y
+         * mostrar un mensaje para cada cliente de la forma: Cliente Numero:
+         * {id} Nombre: Nombre_{id} Email: email_{id}@gmail.com
+         *
+         * @param cantidadClientes
+         * @return
+         */
     }
 
-    /**
-     * 1. Crear n clientes y agregarlos a una lista.
-     * 2. Recorrer la lista y mostrar un mensaje para cada cliente de la forma:
-     *  Cliente Numero: {id}
-     *  Nombre: Nombre_{id}
-     *  Email: email_{id}@gmail.com
-     * @param cantidadClientes
-     * @return
-     */
-    public List<Cliente> ejercicio2(int cantidadClientes) {
+        public List<Cliente> ejercicio2(int cantidadClientes) {
         List<Cliente> clientes = new ArrayList();
 
         for (int i = 1; i <= cantidadClientes; i++) {
@@ -67,7 +67,7 @@ public class TrabajoPractico4 {
             clientes.add(cliente);
         }
 
-        for(Cliente cliente : clientes) {
+        for (Cliente cliente : clientes) {
             System.out.println("Cliente: " + cliente.getId());
             System.out.println("Nombre: " + cliente.getNombre());
             System.out.println("Email: " + cliente.getEmail());
@@ -77,24 +77,23 @@ public class TrabajoPractico4 {
         return clientes;
     }
 
-
     /**
      * Crear una lista de 20 clientes y mostrar solo los clientes con id impar
      * El ID empieza en 1
+     *
      * @param clientes
      */
-    
     public void ejercicio3() {
         List<Cliente> clientes = new ArrayList();
-        int cantidadClientes = 20;
-        for (int i = 1; i <= cantidadClientes; i++) {
+        int cantidadCli = 20;
+        for (int i = 1; i <= cantidadCli; i++) {
             Cliente cliente = new Cliente();
             cliente.setId(i);
             cliente.setNombre("nombre_" + i);
             cliente.setEmail("email_" + i + "@email.com");
 
             clientes.add(cliente);
-           
+
         }
 
         for (int i = 0; i < clientes.size(); i++) {
@@ -108,6 +107,4 @@ public class TrabajoPractico4 {
         }
     }
 
-   
 }
-
