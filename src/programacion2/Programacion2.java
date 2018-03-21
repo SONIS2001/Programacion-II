@@ -1,5 +1,6 @@
 package programacion2;
 
+import ejercicios.Final2018;
 import ejercicios.TrabajoPractico1;
 import ejercicios.TrabajoPractico2;
 import ejercicios.TrabajoPractico3;
@@ -12,10 +13,14 @@ import modelos.Pedido;
 public class Programacion2 {
 
     public static void main(String[] args) throws Exception {
-        TrabajoPractico4 practico = new TrabajoPractico4();
+        /*TrabajoPractico4 practico = new TrabajoPractico4();
 
-        practico.ejercicio1();
+        practico.ejercicio1();*/
 
+        Final2018 eje= new Final2018();
+        
+        eje.ejercicio2();
+        
         
 
     }
